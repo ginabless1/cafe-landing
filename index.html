@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>모닝빈 카페</title>
+<style>
+  :root { --brown:#4b2e1e; --cream:#faf3e8; --accent:#c8793a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif; color:var(--brown); background:var(--cream); line-height:1.6; }
+  header { display:flex; justify-content:space-between; align-items:center; padding:20px 6vw; }
+  header strong { font-size:1.3rem; }
+  nav a { margin-left:20px; color:var(--brown); text-decoration:none; }
+  .hero { text-align:center; padding:12vh 6vw; background:var(--brown); color:var(--cream); }
+  .hero h1 { font-size:clamp(2rem,6vw,3.5rem); margin-bottom:12px; }
+  .hero p { margin-bottom:28px; opacity:.85; }
+  .btn { display:inline-block; padding:12px 28px; background:var(--accent); color:#fff; border-radius:999px; text-decoration:none; font-weight:600; }
+  section { padding:64px 6vw; max-width:1000px; margin:0 auto; }
+  h2 { margin-bottom:24px; text-align:center; }
+  .menu { display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:20px; }
+  .card { background:#fff; border-radius:16px; padding:24px; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,.06); }
+  .card .emoji { font-size:2.4rem; }
+  .card .price { color:var(--accent); font-weight:700; margin-top:6px; }
+  .info { text-align:center; }
+  footer { text-align:center; padding:24px; font-size:.85rem; opacity:.7; }
+</style>
+</head>
+<body>
+<header>
+  <strong>☕ 모닝빈</strong>
+  <nav><a href="#menu">메뉴</a><a href="#visit">오시는 길</a></nav>
+</header>
+
+<div class="hero">
+  <h1>하루의 시작, 한 잔의 여유</h1>
+  <p>직접 로스팅한 원두로 내리는 따뜻한 커피</p>
+  <a class="btn" href="#menu">메뉴 보기</a>
+</div>
+
+<section id="menu">
+  <h2>대표 메뉴</h2>
+  <div class="menu">
+    <div class="card"><div class="emoji">☕</div><h3>아메리카노</h3><div class="price">4,500원</div></div>
+    <div class="card"><div class="emoji">🥛</div><h3>카페라떼</h3><div class="price">5,000원</div></div>
+    <div class="card"><div class="emoji">🍮</div><h3>바닐라 크림라떼</h3><div class="price">5,800원</div></div>
+    <div class="card"><div class="emoji">🥐</div><h3>버터 크루아상</h3><div class="price">4,200원</div></div>
+  </div>
+</section>
+
+<section id="visit" class="info">
+  <h2>오시는 길</h2>
+  <p>서울시 마포구 커피로 12</p>
+  <p>매일 08:00 – 21:00 · 연중무휴</p>
+</section>
+
+<footer>© 2026 모닝빈 카페</footer>
+</body>
+</html>
